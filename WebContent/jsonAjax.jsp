@@ -28,13 +28,19 @@
 			type : "POST",
 			url : "http://localhost:8090/lectureEvaluation/ajax3",
 			//data :"username" :+username+,"password" : +password+,
-			data : 
+			data : data,
 			contentType : "application/json",
 			dataType: "json"
 			// 내 웹서버와 주고 받을 때는 상관없는데, 만약에 네이버나 구글서버에 보내는 거라면??
 			// 그래서 dataType을 적어주는게 맞다.
 			
-		}).done().fail()
+		}).done(function(result){
+			var a = JSON.parse(result);
+			console.log(result);
+			console.log(a)
+		}).fail(function(error){
+			
+		})
 	}
 </script>
 </body>
