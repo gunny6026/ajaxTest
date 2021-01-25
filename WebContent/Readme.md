@@ -16,7 +16,7 @@ var data ={
 ![image](https://user-images.githubusercontent.com/66653324/105654374-398bc780-5f01-11eb-93a8-8c219d20e0b4.png)
 
 
-1번이 자바스크립트 오브젝트 : value 값만 쌍따옴표로 되어있다.
+1번이 자바스크립트 오브젝트 : value 값만 쌍따옴표로 되어있다. <br/>
 2번이 json :  모두 쌍따옴표로 되어있다.
 
 

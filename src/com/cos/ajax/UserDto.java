@@ -1,19 +1,10 @@
 package com.cos.ajax;
 
-public class User {
+public class UserDto {
 	
-	private int id;
 	private String username;
 	private String password;
-	private String phone;
 	
-	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
 	public String getUsername() {
 		return username;
 	}
@@ -26,12 +17,11 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getPhone() {
-		return phone;
+	@Override
+	public String toString() {
+		return "UserDto [username=" + username + ", password=" + password + "]";
 	}
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
+	
 	
 	
 

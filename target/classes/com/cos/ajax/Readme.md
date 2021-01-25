@@ -1,4 +1,6 @@
-# POST 방식
+# application/x-www-form-urlencoded
+
+postAjax.jsp 파일!!
 
 ```javascript
 $.ajax({

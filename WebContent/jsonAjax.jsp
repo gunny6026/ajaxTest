@@ -23,21 +23,26 @@
 	console.log(data);
 	console.log(JSON.stringify(data));
 	
+	var jsonData = JSON.stringify(data);
+	
+	//json을 전송해야함 
 	function jsonajax(){
 		$.ajax({
 			type : "POST",
-			url : "http://localhost:8090/lectureEvaluation/ajax3",
+			url : "http://localhost:8090/ajax/ajax3",
 			//data :"username" :+username+,"password" : +password+,
-			data : data,
-			contentType : "application/json",
+			//data : data,
+			data : jsonData,
+			// contentType은 야 이 데이터 json이다~ 라고 알려주는거
+			//contentType : "application/json",
 			dataType: "json"
 			// 내 웹서버와 주고 받을 때는 상관없는데, 만약에 네이버나 구글서버에 보내는 거라면??
 			// 그래서 dataType을 적어주는게 맞다.
 			
 		}).done(function(result){
-			var a = JSON.parse(result);
+			//console.log(JSON.parse(result));
 			console.log(result);
-			console.log(a)
+			//console.log(a)
 		}).fail(function(error){
 			
 		})

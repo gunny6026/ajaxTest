@@ -11,11 +11,20 @@
 
 
 
-- [POST(x-www-from-urlencoded 데이터로 요청)](src/com/cos/ajax/Readme.md)
-
+- [POST(x-www-form-urlencoded 으로 데이터 보내기)](src/com/cos/ajax/Readme.md)
+- [POST(JSON 으로 데이터 보내기)](WebContent/Readme/Readme.md)
 - [자바스크립트 오브젝트 & JSON](WebContent/Readme.md)
 
 
 
 ---------------------
+### Gson
+
+```java
+Gson gson = new Gson();
+		// gson.fromJson()  => json을 자바 오브젝트로
+		// gson.toJson() => 자바 오브젝트를 json으로
+		
+
+```
 
