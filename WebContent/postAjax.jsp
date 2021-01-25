@@ -21,7 +21,8 @@
 		data : "username=cony&userpassword=1234",
 		//contentType: "application/x-www-form-urlencoded", // 사실 생략 가능하다 왜냐하면 브라우저에 보내는게 아니고 내가 만든 서블릿에서 보내니깐 다 안다 응답할 때만 적으면 됨
 		//dataType : "text" //응답되는 데이터를 자바스크립트로 파싱하는 용도!! , 생략가능
-		dataType : "json"
+		//dataType : "json"
+		// 응답 받는 데이터 타입
 	})
 	.done(function(result){
 		console.log(result);

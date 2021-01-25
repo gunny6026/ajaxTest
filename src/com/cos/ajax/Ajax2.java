@@ -37,12 +37,13 @@ public class Ajax2 extends HttpServlet {
 		
 		System.out.println("username : " +username);
 		System.out.println("userpassword : " +userpassword);
+			String jsonData = "\r\n"
+			+ "{\"username\" : \"ssar\" , \"userpassword\" : \"123213213\"}";
 		
-		String jsonData = "\r\n"
-				+ "{\"username\" : \"ssar\" , \"userpassword\" : \"123213213\"}";
 		
 		PrintWriter out = response.getWriter();
 		out.print(jsonData);
+		//out.print(username);
 		out.flush();
 	
 	}
